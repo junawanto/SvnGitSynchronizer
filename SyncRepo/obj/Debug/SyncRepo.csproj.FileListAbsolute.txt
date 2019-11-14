@@ -1,0 +1,12 @@
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SyncRepo.dll
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SyncRepo.pdb
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpSvn.dll
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpSvn.UI.dll
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpSvn.pdb
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpSvn.xml
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpSvn.UI.pdb
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpSvn.UI.xml
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\bin\Debug\SharpPlink-x64.svnExe
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\obj\Debug\SyncRepo.csprojResolveAssemblyReference.cache
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\obj\Debug\SyncRepo.dll
+C:\Users\as12007\Documents\Visual Studio 2013\Projects\SvnGitSynchronizer\SyncRepo\obj\Debug\SyncRepo.pdb
