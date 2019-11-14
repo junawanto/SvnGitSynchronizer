@@ -1,2 +1,0 @@
-# SvnGitSynchronizer
-testing purpose
