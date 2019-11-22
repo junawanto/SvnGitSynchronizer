@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
+using System.Collections.ObjectModel;
+
+namespace SyncRepo
+{
+    public class Method
+    {
+        public static string EventLogX(string Clientsource)
+        {
+            string path = string.Empty;
+            try
+            {
+                Process process = new Process();
+                ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe");
+
+                startInfo.UseShellExecute = false;
+                startInfo.RedirectStandardInput = true;
+                startInfo.RedirectStandardOutput = true;
+                startInfo.Verb = "runas";
+                process.StartInfo = startInfo;
+                process.Start();
+
+                process.StandardInput.WriteLine(@"cd " + Clientsource);
+                process.StandardInput.WriteLine("svn log -v > repository_log_" + DateTime.Now.ToString("dd-MM-yyyy") + "_tmp.xml");
+                process.StandardInput.WriteLine("/C");
+                process.WaitForExit();
+
+                path = Clientsource + "\\repository_log_" + DateTime.Now.ToString("dd-MM-yyyy") + "_tmp.xml";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return path;
+        }
+
+        public static bool CompareFile(string file1, string file2)
+        {
+            try
+            {
+                byte[] byte1 = File.ReadAllBytes(file1);
+                byte[] byte2 = File.ReadAllBytes(file2);
+
+                if (file1.Length == file2.Length)
+                {
+                    for (int i = 0; i < file1.Length; i++)
+                    {
+                        if (file1[i] != file2[i])
+                        {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            
+        }
+    }
+}
